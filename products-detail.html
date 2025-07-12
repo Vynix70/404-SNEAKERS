@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - 404 SNEAKERS</title>
+    <link rel="icon" href="icons8-error-50.png" type="image/png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        .buy-out-btn {
+            background-color: #4CAF50; /* Warna hijau */
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .buy-out-btn:hover {
+            background-color: white; /* Warna putih saat hover */
+            color: #4CAF50;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+
+        .buy-out-btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .buy-out-btn:hover::after {
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">404 SNEAKERS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Page1.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products-detail.html">Detail Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <script>
+        // Optional: Animasi tambahan saat tombol diklik
+        btn.addEventListener('click', () => {
+    btn.style.transform = 'translateY(1px)';
+    setTimeout(() => {
+        btn.style.transform = 'translateY(-2px)';
+        window.location.href = `checkout.html?id=${product.id}`;
+    }, 200); // beri delay agar animasi selesai dulu
+});
+
+    </script>
+
+    <!-- Product Detail Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row" id="productDetail">
+                <!-- Product details will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2025 404-SNEAKERS. All rights reserved.</p>
+            <div class="social-links mt-3">
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/404_sneakerss?igsh=cXMzZmp5cWZubnB5" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+        // Products Data
+        const products = [
+        { id: 1, name: "Air Jordan 1 Retro", brand: "Jordan", price: 199.99, stock: 15, image: "download (6).jpg", promo: true, description: "Sepatu Air Jordan 1 Retro High OG adalah versi retro dari sepatu basket ikonik yang pertama kali digunakan oleh Michael jordan Sepatu Air Jordan 1 Retro merupakan bagian dari budaya sneakerhead dan sering kali menjadi momen bersejarah ketika dirilis. Dengan desain yang ikonik dan teknologi yang baik, sepatu ini tidak hanya cocok untuk bermain basket tetapi juga sebagai statement fashion." },
+            { id: 2, name: "Nike Air Force 1", brand: "Nike", price: 129.99, stock: 22, image: "Nike Air Force 1 '07 Men's Shoe.jpg", promo:true, description: "Nike Air Force 1 adalah sepatu basket ikonik yang pertama kali dirilis pada tahun 1982. Nike Air Force 1 telah menjadi salah satu sepatu yang paling populer dan ikonik di dunia, tidak hanya karena desainnya yang stylish tetapi juga karena kenyamanan dan dukungannya. Sepatu ini telah digunakan oleh banyak orang, dari atlet profesional hingga penggemar fashion, dan terus menjadi pilihan yang populer hingga saat ini." },
+            { id: 3, name: "Adidas Ultraboost", brand: "Adidas", price: 179.99, stock: 8, image: "adidas Womens Ultraboost Light.jpg", promo:true, description: "Adidas Ultraboost adalah sepatu lari yang sangat populer dan dikenal karena kenyamanan dan performanya. Adidas Ultraboost sangat populer di kalangan pelari dan penggemar fashion karena kombinasi antara kenyamanan, performa, dan gaya. Sepatu ini sangat cocok untuk pengguna yang mencari sepatu yang dapat digunakan dalam berbagai aktivitas dan kesempatan." },
+            { id: 4, name: "Nike Dunk Low", brand: "Nike", price: 110.00, stock: 12, image: "Zapatillas Nike Dunk Low Retro informales para hombre (Panda negra_blanca) DD1391-100.jpg", promo:true,description: "Nike Dunk Low adalah sepatu basket yang ikonik dan sangat populer, dikenal karena desainnya yang stylish dan kenyamanan yang baik. Nike Dunk Low sangat populer di kalangan penggemar basket, sneakerhead, dan banyak orang mencari sepatu yang stylish dan nyaman untuk digunakan dalam berbagai kesempatan." },
+            { id: 5, name: "Puma RS-X", brand: "Puma", price: 99.99, stock: 5, image: "RS-X Efekt Premium Sneakers Women _ PUMA.jpg",promo:true, description: "Puma RS-X adalah sepatu yang stylish dan modern yang dirancang dengan teknologi canggih dan desain yang futuristik. Puma RS-X adalah sepatu yang sangat populer di kalangan penggemar fashion dan olahraga, karena kombinasi antara desain yang stylish, kenyamanan yang baik, dan teknologi canggih." },
+            { id: 6, name: "Adidas Superstar", brand: "Adidas", price: 89.99, stock: 18, image: "Luxury fashion & independent designers _ SSENSE.jpg",promo:true, description: "Adidas Superstar adalah sepatu ikonik yang pertama kali dirilis pada tahun 1969 dan telah menjadi salah satu sepatu yang paling populer dan ikonik di dunia, tidak hanya karena desainnya yang klasik tetapi juga karena kenyamanan dan dukungannya. Sepatu ini sangat cocok untuk pengguna yang mencari sepatu yang stylish dan nyaman untuk digunakan dalam berbagai kesempatan." },
+            { id: 7, name: "Nike Air Max 90", brand: "Nike", price: 139.99, stock: 7, image: "Nike - Zapatillas casual de hombre Air Max 90 Ltr Nike.jpg",promo:true, description: " Nike Air Max 90 adalah sepatu lari yang ikonik dan sangat populer, dikenal karena desainnya yang stylish dan teknologi Air Max yang inovatif. Nike Air Max 90 sangat populer di kalangan penggemar lari, sneakerhead, dan pengguna yang mencari sepatu yang stylish dan nyaman untuk digunakan dalam berbagai kesempatan. Sepatu ini sangat cocok untuk pengguna yang mencari kombinasi antara kenyamanan, performa, dan gaya." },
+            { id: 8, name: "Jordan 4 Retro", brand: "Jordan", price: 219.99, stock: 3, image: "Air Jordan 4 Retro 'Military Black' _ DH6927-111.jpg", promo:true, description: " Air Jordan 4 Retro adalah sepatu basket ikonik yang dirancang oleh Tinker Hatfield dan pertama kali dirilis pada tahun 1989. Air Jordan 4 Retro sangat populer di kalangan penggemar basket, sneakerhead, dan merupakan sepatu yang stylish dan nyaman untuk digunakan dalam berbagai kesempatan. Sepatu ini sangat cocok untuk pengguna yang mencari kombinasi antara kenyamanan, performa, dan gaya. " },
+            { id: 9, name: "Puma Suede Classic", brand: "Puma", price: 79.99, stock: 14, image: "Puma Suede Classic, Unisex Adults' Low-Top Trainers.jpg",promo:true, description: " Puma Suede Classic adalah sepatu yang ikonik dan stylish yang telah menjadi bagian dari budaya populer sejak tahun 1968. Puma Suede Classic sangat populer di kalangan penggemar fashion dan merupakan sepatu yang stylish dan nyaman untuk digunakan dalam berbagai kesempatan. Sepatu ini sangat cocok untuk pengguna yang mencari kombinasi antara gaya, kenyamanan, dan kualitas. " },
+            { id: 10, name: "Adidas NMD R1", brand: "Adidas", price: 149.99, stock: 9, image: "adidas Originals Men's NMD_R1 Shoe.jpg", promo:true, description: " Adidas NMD R1 adalah sepatu yang stylish dan modern yang dirancang untuk memberikan kenyamanan dan performa yang baik. Adidas NMD R1 sangat populer di kalangan penggemar fashion dan olahraga, karena kombinasi antara desain yang stylish, kenyamanan yang baik, dan teknologi canggih. Sepatu ini sangat cocok untuk pengguna yang mencari sepatu yang dapat digunakan dalam berbagai kesempatan dan memberikan kenyamanan yang baik." },
+            { id: 11, name: "Puma Speedcat", brand: "Puma", price: 159.99, stock: 6, image: "PUMA.jpg", promo:true, description: " Puma Speedcat adalah sepatu yang stylish dan modern yang dirancang untuk memberikan kenyamanan dan performa yang baik. Puma Speedcat sangat populer di kalangan penggemar fashion dan olahraga, karena kombinasi antara desain yang stylish, kenyamanan yang baik, dan performa yang baik. Sepatu ini sangat cocok untuk pengguna yang mencari sepatu yang dapat digunakan dalam berbagai kesempatan dan memberikan kenyamanan yang baik. " },
+            { id: 12, name: "Adidas Samba OG", brand: "Adidas", price: 139.99, stock: 10, image: "Mens Shoes - adidas Originals Samba OG - White - Core Black - B75806 _.jpg", promo: true, description: " Adidas Samba OG adalah sepatu yang ikonik dan stylish yang dirancang untuk memberikan kenyamanan dan performa yang baik . Adidas Samba OG sangat populer di kalangan penggemar fashion dan olahraga, karena kombinasi antara desain yang klasik, kenyamanan yang baik, dan sejarah yang kaya. Sepatu ini sangat cocok untuk pengguna yang mencari sepatu yang stylish dan nyaman untuk digunakan dalam berbagai kesempatan. " }
+          
+        ];
+
+
+        
+
+        // Load product detail
+        document.addEventListener('DOMContentLoaded', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = parseInt(urlParams.get('id'));
+        const product = products.find(p => p.id === productId);
+
+        if (product) {
+            const productDetail = document.getElementById('productDetail');
+
+            const hargaAsli = product.price * 16000;
+            let hargaHTML = '';
+
+            if (product.promo) {
+                const hargaDiskon = hargaAsli * 0.6;
+                hargaHTML = `
+                    <p class="text-muted mb-1">
+                        <del>${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(hargaAsli)}</del>
+                    </p>
+                    <h3 class="text-danger fw-bold">
+                        ${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(hargaDiskon)}
+                    </h3>
+                `;
+            } else {
+                hargaHTML = `
+                    <h3 class="my-4">
+                        ${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(hargaAsli)}
+                    </h3>
+                `;
+            }
+
+            productDetail.innerHTML =  ` 
+                <div class="col-md-6">
+                    <img src="${product.image}" alt="${product.name}" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2>${product.name}</h2>
+                    <p class="text-muted">${product.brand}</p>
+                    ${hargaHTML}
+                    <p>${product.description}</p>
+
+                    <div class="d-flex align-items-center mb-3 mt-4"> 
+                        <span class="badge bg-${product.stock > 5 ? 'success' : 'warning'} me-2">
+                            ${product.stock > 5 ? 'In Stock' : 'Low Stock'}
+                        </span>
+                        <small>${product.stock} pairs available</small>
+                    </div>
+
+                    <button class="buy-out-btn mt-2" id="buyNowBtn">Beli Sekarang</button> 
+                </div>
+            `;
+
+            const buyNowBtn = document.getElementById('buyNowBtn');
+            buyNowBtn.addEventListener('click', () => {
+                buyNowBtn.style.transform = 'translateY(1px)';
+                setTimeout(() => {
+                    buyNowBtn.style.transform = 'translateY(-2px)';
+                    window.location.href = `form-pesan.html?id=${product.id}&name=${encodeURIComponent(product.name)}&price=${product.price}&promo=${product.promo}`;
+                });
+            });
+
+        } else {
+            window.location.href = 'products.html'; // Redirect jika tidak ditemukan
+        }
+    });
+</script>
+</body>
+</html>
